@@ -1,0 +1,16 @@
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  .left-panel {
+    border-right: 2px solid #ac66105e;
+    margin-right: 40px;
+    p {
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+  .active {
+    background-color: #ac66105e;
+  }
+}

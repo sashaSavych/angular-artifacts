@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import {ROUTES} from './app.routing';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  readonly routes = ROUTES.filter(route => route.path !== '' && route.path !== '**');
 }

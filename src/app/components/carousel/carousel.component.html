@@ -1,0 +1,12 @@
+<section class="carousel-wrapper" [ngStyle]="{width: itemWidth+'px'}">
+  <div class="carousel-inner" #carousel>
+    <div class="carousel-element" *ngFor="let item of items;" carouselItemElement>
+      <ng-container [ngTemplateOutlet]="item.tpl"></ng-container>
+    </div>
+  </div>
+  <div class="controls" *ngIf="showControls">
+    <i class="fa fa-envelope" (click)="prev()"><-</i>
+    <i class="fa fa-print" (click)="next()">-></i>
+  </div>
+</section>
+

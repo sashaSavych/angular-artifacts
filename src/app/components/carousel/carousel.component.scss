@@ -1,0 +1,28 @@
+.carousel-wrapper {
+  overflow: hidden;
+  border: 1px solid blue;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-inner {
+  display: flex;
+}
+
+.carousel-element {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+}
+
+.controls {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  i {
+    cursor: pointer;
+  }
+}
